@@ -86,7 +86,7 @@ const GameSession = () => {
         }
         <p>Total Words to try: {preference.totalWords}</p>
       </header>
-      {state.passOrFail && <p>{state.passOrFail}</p>}
+      {state.passOrFail && <p>{state.passOrFail}. Correct answer is {state.currentWord}</p>}
       <main>
         <p>Question: {state.currentQuestion ? state.currentQuestion.toUpperCase() : null}</p>
         <form onSubmit={checkAnswer}>
